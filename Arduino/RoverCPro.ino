@@ -27,7 +27,7 @@ void setup() {
   Serial.begin(115200);
   Serial.print("connecting to WIFI");
 
-  WiFi.begin("Castle", "Korolevstvo");
+  WiFi.begin("ssid", "password");
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
